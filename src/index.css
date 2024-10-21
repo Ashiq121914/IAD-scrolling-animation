@@ -1,0 +1,28 @@
+html {
+  font-size: 62.5%;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #0c3a2f;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 0;
+
+  margin-top: 180px;
+  margin-bottom: 100px;
+  gap: 8px;
+}
+
+.box,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7 {
+  width: 45rem;
+  height: 45rem;
+}

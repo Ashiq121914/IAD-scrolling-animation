@@ -1,0 +1,42 @@
+.box25 {
+  transform: translateY(182rem) translateX(0rem) rotate(180deg);
+}
+
+.box25 {
+  position: relative;
+  display: inline-block;
+}
+
+.box25 svg {
+  transition: transform 0.3s ease-in;
+}
+
+.box25 svg:hover {
+  transform: scale(1.02);
+}
+
+.box25:hover path {
+  stroke: #dcc4bd;
+  stroke-width: 8;
+}
+
+.tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+  z-index: 10;
+}
+
+.box25:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
